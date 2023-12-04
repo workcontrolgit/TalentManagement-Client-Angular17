@@ -3,7 +3,9 @@
   <form [formGroup]="entryForm" novalidate>
     <div class="card">
       <div class="card-header">
-        <div class="float-start"><h3 class="text-secondary">Position</h3></div>
+        <div class="float-start">
+          <h3 class="text-secondary">Position</h3>
+        </div>
         <div class="float-end">
           <!-- HTML markup for form mode New or Edit -->
           <a class="btn text-dark" [routerLink]="['/position']"><i class="fa fa-arrow-left"></i> Back</a>
@@ -106,22 +108,22 @@
       <div class="card-footer">
         <div class="float-left">
           <!-- HTML markup for Create button -->
+          @if (this.isAddNew) {
           <button
             (click)="onCreate()"
             class="btn btn-primary w-20"
             type="submit"
             [disabled]="entryForm.invalid || !isAddNew"
-            *ngIf="this.isAddNew"
           >
             <span translate><i class="fas fa-plus"></i> Save</span>
           </button>
+          } @else {
           <!-- HTML markup for Update button -->
           <button
             (click)="onUpdate()"
             class="btn btn-primary w-20"
             type="submit"
             [disabled]="entryForm.invalid || isAddNew"
-            *ngIf="!this.isAddNew"
           >
             <span translate><i class="fas fa-edit"></i> Update</span>
           </button>
@@ -131,10 +133,10 @@
             class="btn btn-danger w-20"
             type="submit"
             [disabled]="entryForm.invalid || isAddNew"
-            *ngIf="!this.isAddNew"
           >
             <span translate><i class="fas fa-trash-alt"></i> Delete</span>
           </button>
+          }
         </div>
       </div>
     </div>
