@@ -16,7 +16,7 @@
               <th>Email</th>
             </tr>
           </thead>
-          @if (employees?.length !== 0) {
+          @if (employees.length !== 0) {
           <tbody>
             @for (employee of employees; track employee) {
             <tr (click)="wholeRowClick(employee)">
