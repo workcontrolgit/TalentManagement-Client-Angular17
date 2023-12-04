@@ -82,10 +82,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "TalentManagement:build:production"
+              "buildTarget": "TalentManagement:build:production"
             },
             "development": {
-              "browserTarget": "TalentManagement:build:development"
+              "buildTarget": "TalentManagement:build:development"
             },
             "ci": {
               "progress": false
@@ -96,7 +96,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "TalentManagement:build"
+            "buildTarget": "TalentManagement:build"
           }
         },
         "test": {

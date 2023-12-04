@@ -16,19 +16,24 @@
               <th>Email</th>
             </tr>
           </thead>
-          <tbody *ngIf="employees?.length !== 0">
-            <tr *ngFor="let employee of employees" (click)="wholeRowClick(employee)">
+          @if (employees?.length !== 0) {
+          <tbody>
+            @for (employee of employees; track employee) {
+            <tr (click)="wholeRowClick(employee)">
               <td>{{ employee.lastName }}</td>
               <td>{{ employee.firstName }}</td>
               <td>{{ employee.employeeTitle }}</td>
               <td>{{ employee.email }}</td>
             </tr>
+            }
           </tbody>
-          <tbody *ngIf="employees?.length === 0">
+          } @if (employees?.length === 0) {
+          <tbody>
             <tr>
-              <td colspan="3" class="no-data-available">No data!</td>
+              <td colspan="4" class="no-data-available">No data!</td>
             </tr>
           </tbody>
+          }
         </table>
       </div>
     </div>
