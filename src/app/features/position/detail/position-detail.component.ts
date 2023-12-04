@@ -10,7 +10,7 @@ import { ModalService } from '@app/services/modal/modal.service';
 
 import { RxwebValidators, RxReactiveFormsModule } from '@rxweb/reactive-form-validators';
 import { ToastService } from '@app/services/toast/toast.service';
-import { NgIf } from '@angular/common';
+
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 
@@ -21,7 +21,7 @@ const log = new Logger('Detail');
   templateUrl: './position-detail.component.html',
   styleUrls: ['./position-detail.component.scss'],
   standalone: true,
-  imports: [ReactiveFormsModule, RxReactiveFormsModule, CommonModule, RouterLink, TranslateModule, NgIf],
+  imports: [ReactiveFormsModule, RxReactiveFormsModule, CommonModule, RouterLink, TranslateModule],
 })
 export class PositionDetailComponent implements OnInit {
   formMode = 'New';

@@ -3,7 +3,7 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 import { Observable } from 'rxjs';
 import { AuthService } from '@app/core/auth/auth.service';
-import { NgIf, AsyncPipe } from '@angular/common';
+import { AsyncPipe } from '@angular/common';
 import { LanguageSelectorComponent } from '../../i18n/language-selector.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbNavbar, NgbCollapse, NgbDropdown, NgbDropdownToggle, NgbDropdownMenu } from '@ng-bootstrap/ng-bootstrap';
@@ -22,7 +22,6 @@ import { NgbNavbar, NgbCollapse, NgbDropdown, NgbDropdownToggle, NgbDropdownMenu
     NgbDropdown,
     NgbDropdownToggle,
     NgbDropdownMenu,
-    NgIf,
     AsyncPipe,
   ],
 })
