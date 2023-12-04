@@ -7,7 +7,7 @@ import { DataTablesResponse } from '@shared/interfaces/data-tables-response';
 import { Logger } from '@app/core';
 
 import { Router, ActivatedRoute, ParamMap, RouterLink } from '@angular/router';
-import { NgIf, NgFor } from '@angular/common';
+
 import { DataTablesModule } from 'angular-datatables';
 
 const log = new Logger('Position');
@@ -16,7 +16,7 @@ const log = new Logger('Position');
   templateUrl: './position-list.component.html',
   styleUrls: ['./position-list.component.scss'],
   standalone: true,
-  imports: [RouterLink, DataTablesModule, NgIf, NgFor],
+  imports: [RouterLink, DataTablesModule],
 })
 export class PositionListComponent implements OnInit {
   dtOptions: DataTables.Settings = {};
