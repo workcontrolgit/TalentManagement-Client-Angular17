@@ -1,6 +1,6 @@
 # Blog post
 
-[Fullstack Angular 15, Bootstrap 5 & .NET 7 API: Project Demo](https://medium.com/scrum-and-coke/full-stack-angular-15-bootstrap-5-net-7-api-563227ef7a20)
+[Upgrading from Angular 16 to 17 and Exploring the Latest Control Flow Language Features](https://medium.com/scrum-and-coke/upgrade-angular-16-to-17-and-try-out-new-control-flow-language-7a50e62a73c7)
 
 # Talent Management Demo
 
