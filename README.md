@@ -8,7 +8,7 @@ GitHub Page: https://workcontrolgit.github.io/TalentManagement-Client-Angular17
 
 # ng deploy command
 
-ng deploy --base-href "/TalentManagement-Client-Angular17"
+ng deploy --base-href "/TalentManagement-Client-Angular17/"
 
 # Getting started
 
