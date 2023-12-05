@@ -7,6 +7,7 @@
   "useSilentRefresh": true,
   "silentRefreshTimeout": 50000,
   "timeoutFactor": 0.25,
+  "strictDiscoveryDocumentValidation": false,
   "sessionChecksEnabled": false,
   "showDebugInformation": false,
   "clearHashAfterLogin": false,
