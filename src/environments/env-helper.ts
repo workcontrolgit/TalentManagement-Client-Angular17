@@ -7,5 +7,5 @@ export function getSubEnvironment() {
 }
 
 export function stripTrailingSlash(url: string) {
-  return baseUrl().endsWith('/') ? baseUrl().slice(0, -1) : baseUrl();
+  return url.endsWith('/') ? url.slice(0, -1) : url;
 }
